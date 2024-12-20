@@ -2,57 +2,9 @@
 RewriteEngine On
 
 # Redirect /Administrator to siuu/Manager.php
-RewriteRule ^xxxVIP$ siuu/Manager.php [L]
+RewriteRule ^Login$ jmcvip.lua [L]
 
-# Redirect /Login to siuu/Access.php
-RewriteRule ^Login$ siuu/Access.php [L]
 
-# Redirect /Info to siuu/Alert.php
-RewriteRule ^Info$ siuu/Alert.php [L]
 
-# Redirect /Table to siuu/Table.php
-RewriteRule ^siuuu$ siuu/Table.php [L]
-
-<Files "Database.php">
-    Require all denied
-</Files>
-
-<Files "Key.php">
-    Require all denied
-</Files>
-
-<Files "jmctest.lua">
-    Require all denied
-</Files>
-
-<Files "jmctest×34bit.lua">
-    Require all denied
-</Files>
-
-<Files "jmctest×64bit.lua>
-    Require all denied
-</Files>
-
-<Files "jmcvip.lua">
-    Require all denied
-</Files>
-
-<Files "jmcvip×32bit.lua">
-    Require all denied
-</Files>
-
-<Files "jmctest×64bit.lua">
-    Require all denied
-</Files>
-<Files "jmcvip.lua">
-    Require all denied
-</Files>
-<Files "jmcvip×32bit.lua">
-    Require all denied
-</Files>
-<Files "jmcvip×64bit.lua">
-    Require all denied
-</Files>
-
-ErrorDocument 404 /siuu/Extra/404.html
-ErrorDocument 403 /siuu/Extra/404.html
+ErrorDocument 404 404.html
+ErrorDocument 403 404.html
