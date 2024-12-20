@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Redirect /Administrator to siuu/Manager.php
-RewriteRule ^Login$ jmcvip.lua [L]
+RewriteRule ^Login$ login/jmcvip.lua [L]
 
 
 
