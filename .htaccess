@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Redirect /Administrator to siuu/Manager.php
-RedirectMatch 301 ^/Login$ /Tt/jmcvip.lua
+Redirect 301 /Login /Tt/jmcvip.lua
 
 
 
