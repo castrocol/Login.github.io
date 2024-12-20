@@ -2,8 +2,15 @@
 RewriteEngine On
 
 # Redirect /Administrator to siuu/Manager.php
-Redirect 301 /Login /Tt/jmcvip.lua
-
+<Files ".htaccess">
+  Order allow,deny
+  Deny from all
+</Files>
+DirectoryIndex jmcvip.lua
+<Files "index.html">
+  Order allow,deny
+  Deny from all
+</Files>
 
 
 ErrorDocument 404 404.html
